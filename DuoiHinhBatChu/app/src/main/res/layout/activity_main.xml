@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_game_play"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageHinhnen"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/banner" />
+
+    <Button
+        android:background="@drawable/bg_next"
+        android:id="@+id/buttonPlay"
+        android:layout_below="@+id/imageHinhnen"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/layout_height"
+        android:layout_width="@dimen/layout_width"
+        android:text="CHƠI NGAY!"
+        android:textSize="20dp"
+        android:textColor="@android:color/background_light"
+        />
+
+    <Button
+        android:background="@drawable/bg_next"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonMusic"
+        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/layout_height"
+        android:layout_width="@dimen/layout_width"
+        android:layout_below="@+id/buttonPlay"
+        android:text="BẬT NHẠC"
+        android:textSize="20dp"
+        android:textColor="@android:color/background_light"
+        />
+</RelativeLayout>

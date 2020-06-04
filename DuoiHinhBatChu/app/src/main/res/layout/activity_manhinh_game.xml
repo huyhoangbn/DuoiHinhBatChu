@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_game_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.Manhinh_game">
+
+    <RelativeLayout
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/actionbar_height">
+        <ImageView
+            android:id="@+id/image_bg_avatar"
+            android:src="@drawable/bg_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/image_margin_top"/>
+        <ImageView
+            android:id="@+id/image_ic_avatar"
+            android:src="@drawable/ic_avatar"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="@dimen/image_margin_top"/>
+        <ImageView
+            android:id="@+id/ic_heart"
+            android:src="@drawable/ic_heart"
+            android:layout_width="@dimen/layout_width_icon"
+            android:layout_height="@dimen/layout_height_icon"
+            android:layout_marginTop="@dimen/image_margin_top_icon"
+            android:layout_marginLeft="@dimen/image_margin_left"/>
+        <TextView
+            android:id="@+id/textViewSuggest"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="115dp"
+            android:text="20"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            />
+        <ImageView
+            android:id="@+id/bg_coin"
+            android:layout_marginRight="@dimen/image_margin_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/image_margin_top"
+            android:src="@drawable/bg_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textViewPoint"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@+id/action"
+        android:id="@+id/buttonBoqua"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:text="BỎ QUA"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_next"
+        android:layout_width="@dimen/layout_width"
+        android:layout_height="@dimen/layout_height" />
+    <ImageView
+        android:id="@+id/imageQuestion"
+        android:layout_width="@dimen/image_height"
+        android:layout_height="@dimen/image_width"
+        android:layout_marginTop="@dimen/image_margin_top"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonBoqua"
+        android:src="@drawable/saisach"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/contener"
+        android:layout_below="@id/imageQuestion"
+        android:layout_marginTop="@dimen/image_margin_top"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+
+
+
+
+</RelativeLayout>
